@@ -13,14 +13,14 @@
  $suma2 = $vc + $r2;
  $suma3 = $vc + $r3;
 
- echo "Valor del capital" .$vc;
+ echo "Valor del capital " .$vc;
  echo "<br>";
 
  if($vc < 500){
-    echo "Interes " .$suma;
+    echo "Valor total + Interes " .$suma;
  }elseif(($vc >= 500) && ($vc < 1500)){
-    echo "Interes " .$suma2;
+    echo "Valor total + Interes  " .$suma2;
  }else{
-    echo "Interes " .$suma3;
+    echo "Valor total + Interes  " .$suma3;
  }
 ?>
