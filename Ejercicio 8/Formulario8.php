@@ -8,7 +8,7 @@
 </head>
 <body>
     <form action="Resultado8.php" method="post">   
-    <label for="">Sexo</label><input type="text" name="sx">
+    <label for="">Sexo</label><select name="sx" id=""><option value="F">F</option><option value="M">M</option></select>
     <label for="">Edad</label><input type="text" name="ed">
     <input type="submit" name="Enviar" id="Enviar">
     </form> 

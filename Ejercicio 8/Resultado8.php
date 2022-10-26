@@ -5,9 +5,9 @@
  $f = 54;
  $m = 63;
 
- if( ($sx == "mujer" or $sx=="f") && ($ed > 54)){
+ if( ($sx == "F") && ($ed > 54)){
    echo "Te puedes jubilar ";
-}elseif(($sx == "hombre" or $sx=="m") && ($ed >= 63)){
+}elseif(($sx == "M") && ($ed >= 63)){
   echo "Te puedes jubilar ";
 }else{
   echo "No te puedes jubilar ";

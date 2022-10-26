@@ -1,14 +1,26 @@
 <?php
- $va = $_POST['va'];
+ $vc = $_POST['vc'];
 
- $vt = $va * 0.15;
- $vp = $va + $vt;
+ $i2 = 0.02;
+ $i4 = 0.045;
+ $i7 = 0.07;
 
- if($va > 0){
-    echo "El valor del producto es " .$va. " y su 15% es " .$vt;
-    echo '<br>';
-    echo "Para ganar el 15% el producto debe ser vendido en " .$vp;
+ $r = $vc * $i2;
+ $r2 = $vc * $i4;
+ $r3 = $vc * $i7;
+
+ $suma = $vc + $r;
+ $suma2 = $vc + $r2;
+ $suma3 = $vc + $r3;
+
+ echo "Valor del capital" .$vc;
+ echo "<br>";
+
+ if($vc < 500){
+    echo "Interes " .$suma;
+ }elseif(($vc >= 500) && ($vc < 1500)){
+    echo "Interes " .$suma2;
  }else{
-    echo "Ingrese el valor del producto ";
+    echo "Interes " .$suma3;
  }
 ?>
